@@ -1,0 +1,129 @@
+{
+    "__comment": "Designed by Justin Schaaf with Cubik Studio - https://cubik.studio",
+    "parent": "minecraft:block/block",
+    "textures": {
+        "particle": "#cap",
+        "cap": "industrial_tech:block/basic_machine_frame",
+        "side": "industrial_tech:block/basic_coal_generator_side",
+        "front": "industrial_tech:block/basic_coal_generator_front"
+    },
+    "elements": [
+        {
+            "__comment": "Base",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 8, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "north": { "uv": [ 0, 8, 16, 16 ], "texture": "#front" },
+                "south": { "uv": [ 0, 8, 16, 16 ], "texture": "#side" },
+                "west": { "uv": [ 0, 8, 16, 16 ], "texture": "#side" },
+                "east": { "uv": [ 0, 8, 16, 16 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Pipe 1",
+            "from": [ 4, 0, 4 ],
+            "to": [ 5, 16, 5 ],
+            "faces": {
+                "down": { "uv": [ 4, 11, 5, 12 ], "texture": "#cap" },
+                "up": { "uv": [ 4, 4, 5, 5 ], "texture": "#cap" },
+                "north": { "uv": [ 11, 0, 12, 16 ], "texture": "#front" },
+                "south": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" },
+                "west": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" },
+                "east": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Pipe 2",
+            "from": [ 4, 0, 11 ],
+            "to": [ 5, 16, 12 ],
+            "faces": {
+                "down": { "uv": [ 4, 4, 5, 5 ], "texture": "#cap" },
+                "up": { "uv": [ 4, 11, 5, 12 ], "texture": "#cap" },
+                "north": { "uv": [ 11, 0, 12, 16 ], "texture": "#front" },
+                "south": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" },
+                "west": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" },
+                "east": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Pipe 3",
+            "from": [ 11, 0, 11 ],
+            "to": [ 12, 16, 12 ],
+            "faces": {
+                "down": { "uv": [ 11, 4, 12, 5 ], "texture": "#cap" },
+                "up": { "uv": [ 11, 11, 12, 12 ], "texture": "#cap" },
+                "north": { "uv": [ 4, 0, 5, 16 ], "texture": "#front" },
+                "south": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" },
+                "west": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" },
+                "east": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Pipe 4",
+            "from": [ 11, 0, 4 ],
+            "to": [ 12, 16, 5 ],
+            "faces": {
+                "down": { "uv": [ 11, 11, 12, 12 ], "texture": "#cap" },
+                "up": { "uv": [ 11, 4, 12, 5 ], "texture": "#cap" },
+                "north": { "uv": [ 4, 0, 5, 16 ], "texture": "#front" },
+                "south": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" },
+                "west": { "uv": [ 4, 0, 5, 16 ], "texture": "#side" },
+                "east": { "uv": [ 11, 0, 12, 16 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Plate 1",
+            "from": [ 0, 9, 0 ],
+            "to": [ 16, 10, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "north": { "uv": [ 0, 6, 16, 7 ], "texture": "#front" },
+                "south": { "uv": [ 0, 6, 16, 7 ], "texture": "#side" },
+                "west": { "uv": [ 0, 6, 16, 7 ], "texture": "#side" },
+                "east": { "uv": [ 0, 6, 16, 7 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Plate 2",
+            "from": [ 0, 11, 0 ],
+            "to": [ 16, 12, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "north": { "uv": [ 0, 4, 16, 5 ], "texture": "#front" },
+                "south": { "uv": [ 0, 4, 16, 5 ], "texture": "#side" },
+                "west": { "uv": [ 0, 4, 16, 5 ], "texture": "#side" },
+                "east": { "uv": [ 0, 4, 16, 5 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Plate 3",
+            "from": [ 0, 13, 0 ],
+            "to": [ 16, 14, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "north": { "uv": [ 0, 2, 16, 3 ], "texture": "#front" },
+                "south": { "uv": [ 0, 2, 16, 3 ], "texture": "#side" },
+                "west": { "uv": [ 0, 2, 16, 3 ], "texture": "#side" },
+                "east": { "uv": [ 0, 2, 16, 3 ], "texture": "#side" }
+            }
+        },
+        {
+            "__comment": "Plate 4",
+            "from": [ 0, 15, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#cap" },
+                "north": { "uv": [ 0, 0, 16, 1 ], "texture": "#front" },
+                "south": { "uv": [ 0, 0, 16, 1 ], "texture": "#side" },
+                "west": { "uv": [ 0, 0, 16, 1 ], "texture": "#side" },
+                "east": { "uv": [ 0, 0, 16, 1 ], "texture": "#side" }
+            }
+        }
+    ]
+}

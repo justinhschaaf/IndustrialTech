@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "industrial_tech:block/basic_machine_frame"
+        }
+    }
+}

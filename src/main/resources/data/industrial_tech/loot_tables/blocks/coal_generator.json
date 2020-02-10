@@ -1,0 +1,57 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "industrial_tech:coal_generator"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"functions": [
+				{
+					"function": "minecraft:copy_name",
+					"source": "block_entity"
+				},
+				{
+					"function": "minecraft:copy_nbt",
+					"source": "block_entity",
+					"ops": [
+						{
+							"source": "capacity",
+							"target": "BlockEntityTag.capacity",
+							"op": "replace"
+						},
+						{
+							"source": "storage",
+							"target": "BlockEntityTag.storage",
+							"op": "replace"
+						},
+						{
+							"source": "Items",
+							"target": "BlockEntityTag.Items",
+							"op": "replace"
+						}
+					]
+				},
+				{
+					"function": "minecraft:set_nbt",
+					"tag": "{burnTime:0, maxBurnTime:0}"
+				},
+				{
+					"function": "minecraft:copy_state",
+					"block": "industrial_tech:coal_generator",
+					"properties": [
+						"upgrade_level"
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,37 +1,40 @@
 {
-  "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "Me!"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
+	"schemaVersion": 1,
+	"id": "industrial_tech",
+	"version": "${version}",
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+	"name": "Industrial Tech",
+	"description": "Industry stuff",
+	"authors": [
+		"justinhschaaf"
+	],
+	"contact": {
+		"homepage": "https://justinschaaf.com/",
+		"sources": "https://github.com/justinhschaaf/IndustrialEngineering"
+	},
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
-  },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+	"license": "MIT",
+	"icon": "assets/industrial_tech/icon.png",
 
-  "depends": {
-    "fabricloader": ">=0.7.2",
-    "fabric": "*",
-    "minecraft": "1.15.x"
-  },
-  "suggests": {
-    "flamingo": "*"
-  }
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.justinschaaf.industrialtech.main.IndustrialTech"
+		],
+		"client": [
+			"com.justinschaaf.industrialtech.main.IndustrialTechClient"
+		]
+	},
+	"mixins": [],
+
+	"depends": {
+		"fabricloader": ">=0.7.2",
+		"fabric": "*",
+		"minecraft": "1.15.x",
+		"fabricflux": ">=1.2.0",
+		"libgui": ">=1.5.1"
+	},
+	"suggests": {}
+	
 }

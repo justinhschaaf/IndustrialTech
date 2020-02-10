@@ -1,0 +1,6 @@
+{
+    "parent": "industrial_tech:block/basic_coal_generator",
+    "textures": {
+        "front": "industrial_tech:block/basic_coal_generator_front_on"
+    }
+}

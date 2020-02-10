@@ -1,0 +1,8 @@
+{
+    "parent": "industrial_tech:block/improved_coal_generator",
+    "textures": {
+        "cap": "industrial_tech:block/advanced_machine_frame",
+        "side": "industrial_tech:block/advanced_coal_generator_side",
+        "front": "industrial_tech:block/advanced_coal_generator_front"
+    }
+}

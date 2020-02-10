@@ -1,0 +1,37 @@
+{
+
+    "industrial_tech.energy_unit": "Φ",
+    "industrial_tech.tooltip_energy": "%1$d / %2$d %3$s",
+    "industrial_tech.tooltip_progress": "%1$d / %2$d",
+
+    "itemGroup.industrial_tech.materials_group": "Industrial Tech: Materials",
+    "itemGroup.industrial_tech.machines_group": "Industrial Tech: Machines",
+
+    "item.industrial_tech.basic_processor": "Processor",
+	"item.industrial_tech.basic_processor.tooltip": "Processors are electronic devices capable of tasks such as computing information and controlling machinery.",
+    "item.industrial_tech.improved_processor": "Diamond Processor",
+	"item.industrial_tech.improved_processor.tooltip": "Processors are electronic devices capable of tasks such as computing information and controlling machinery.",
+    "item.industrial_tech.advanced_processor": "Emerald Processor",
+	"item.industrial_tech.advanced_processor.tooltip": "Processors are electronic devices capable of tasks such as computing information and controlling machinery.",
+	
+	"item.industrial_tech.basic_energy_crystal": "Lapis Energetic Crystal",
+	"item.industrial_tech.basic_energy_crystal.tooltip": "Energetic crystals are special minerals which can hold flux in their intricate crystalline structure.",
+	"item.industrial_tech.improved_energy_crystal": "Diamond Energetic Crystal",
+	"item.industrial_tech.improved_energy_crystal.tooltip": "Energetic crystals are special minerals which can hold flux in their intricate crystalline structure.",
+	"item.industrial_tech.advanced_energy_crystal": "Emerald Energetic Crystal",
+	"item.industrial_tech.advanced_energy_crystal.tooltip": "Energetic crystals are special minerals which can hold flux in their intricate crystalline structure.",
+
+    "item.industrial_tech.basic_upgrade": "Basic Upgrade",
+	"item.industrial_tech.basic_upgrade.tooltip": "Upgrades are components which can be installed in machines that enhance their energy capacity and efficiency.",
+    "item.industrial_tech.improved_upgrade": "Improved Upgrade",
+	"item.industrial_tech.improved_upgrade.tooltip": "Upgrades are components which can be installed in machines that enhance their energy capacity and efficiency.",
+    "item.industrial_tech.advanced_upgrade": "Advanced Upgrade",
+	"item.industrial_tech.advanced_upgrade.tooltip": "Upgrades are components which can be installed in machines that enhance their energy capacity and efficiency.",
+
+    "block.industrial_tech.basic_machine_frame": "Iron Machine Frame",
+    "block.industrial_tech.improved_machine_frame": "Titanium Machine Frame",
+    "block.industrial_tech.advanced_machine_frame": "Osmium Machine Frame",
+
+    "block.industrial_tech.coal_generator": "Thermoelectric Generator"
+
+}
