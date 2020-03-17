@@ -1,4 +1,4 @@
-package com.justinschaaf.industrialtech.util;
+package com.justinschaaf.industrialtech.util.flux;
 
 import net.minecraft.nbt.CompoundTag;
 import szewek.fabricflux.api.IFlux;
@@ -7,8 +7,12 @@ public class Flux implements IFlux {
 
     public static final int BASE_FLUX = 65536;
 
+    // Use PascalCase for tags, just like the base game
+    public static final String CAPACITY_TAG_STR = "FluxCapacity";
+    public static final String AMOUNT_TAG_STR = "FluxAmount";
+
     private int capacity;
-    private int storage;
+    private int amount;
 
     public Flux() {
         this(BASE_FLUX, 0);
@@ -20,7 +24,7 @@ public class Flux implements IFlux {
 
     public Flux(int capacity, int amount) {
         this.capacity = capacity;
-        this.storage = amount;
+        this.amount = amount;
     }
 
     @Override
@@ -34,11 +38,11 @@ public class Flux implements IFlux {
 
     @Override
     public int getFluxAmount() {
-        return this.storage;
+        return this.amount;
     }
 
     public void setFluxAmount(int amount) {
-        this.storage = amount;
+        this.amount = amount;
     }
 
     public int extractFlux(int n) {
@@ -48,7 +52,7 @@ public class Flux implements IFlux {
     @Override
     public int extractFlux(int n, boolean sim) {
         int amt = (getFluxAmount() - n >= 0) ? n : getFluxAmount();
-        if (!sim) this.storage -= amt;
+        if (!sim) this.setFluxAmount(getFluxAmount() - amt);
         return amt;
     }
 
@@ -59,14 +63,19 @@ public class Flux implements IFlux {
     @Override
     public int receiveFlux(int n, boolean sim) {
         int amt = Math.min(getFluxCapacity() - getFluxAmount(), n);
-        if (!sim) this.storage += amt;
+        if (!sim) this.setFluxAmount(getFluxAmount() + amt);
         return amt;
+    }
+
+    @Override
+    public int to(IFlux dest, int amount) {
+        return IFlux.super.to(dest, Math.min(amount, dest.getFluxCapacity() - dest.getFluxAmount()));
     }
 
     public CompoundTag toTag(CompoundTag tag) {
 
-        tag.putInt("capacity", getFluxCapacity());
-        tag.putInt("storage", getFluxAmount());
+        tag.putInt(CAPACITY_TAG_STR, getFluxCapacity());
+        tag.putInt(AMOUNT_TAG_STR, getFluxAmount());
 
         return tag;
 
@@ -74,8 +83,8 @@ public class Flux implements IFlux {
 
     public void fromTag(CompoundTag tag) {
 
-        this.capacity = tag.getInt("capacity");
-        this.storage = tag.getInt("storage");
+        this.setFluxCapacity(tag.getInt(CAPACITY_TAG_STR));
+        this.setFluxAmount(tag.getInt(AMOUNT_TAG_STR));
 
     }
 

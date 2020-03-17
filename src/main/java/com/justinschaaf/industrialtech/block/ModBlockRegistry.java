@@ -1,6 +1,6 @@
 package com.justinschaaf.industrialtech.block;
 
-import com.justinschaaf.industrialtech.main.Reference;
+import com.justinschaaf.industrialtech.util.Reference;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -15,6 +15,7 @@ public class ModBlockRegistry {
     public static Block ADVANCED_MACHINE_FRAME;
 
     // Machines
+    public static Block CAPACITOR;
     public static Block COAL_GENERATOR;
 
     public static void registerBlocks() {
@@ -25,6 +26,7 @@ public class ModBlockRegistry {
         ADVANCED_MACHINE_FRAME = register(Reference.Blocks.ADVANCED_MACHINE_FRAME, new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).nonOpaque().build()));
 
         // Machines
+        CAPACITOR = register(Reference.Blocks.CAPACITOR, new Capacitor(FabricBlockSettings.copy(Blocks.IRON_BLOCK).nonOpaque().build()));
         COAL_GENERATOR = register(Reference.Blocks.COAL_GENERATOR, new CoalGenerator(FabricBlockSettings.copy(Blocks.IRON_BLOCK).nonOpaque().build()));
 
     }

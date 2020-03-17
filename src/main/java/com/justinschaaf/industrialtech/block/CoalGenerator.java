@@ -1,8 +1,7 @@
 package com.justinschaaf.industrialtech.block;
 
 import com.justinschaaf.industrialtech.block.entity.CoalGeneratorEntity;
-import com.justinschaaf.industrialtech.main.Reference;
-import net.fabricmc.fabric.api.container.ContainerProviderRegistry;
+import com.justinschaaf.industrialtech.util.Reference;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -22,23 +21,7 @@ public class CoalGenerator extends AbstractMachine {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-
-        if (world.isClient) return ActionResult.PASS;
-
-        CoalGeneratorEntity be = (CoalGeneratorEntity) world.getBlockEntity(pos);
-
-        /*if (player.isSneaking()) {
-            // Test code
-            EnergyStorage es = be.getEnergyStorage();
-            player.addChatMessage(new TranslatableText("block.industrial_engineering.coal_generator.storage", es.getEnergyStored(), es.getEnergyCapacity(), new TranslatableText("industrial_engineering.energy_unit").asString()), true);
-        } else {
-            // Non-test code
-            if (be != null) ContainerProviderRegistry.INSTANCE.openContainer(new Identifier(Reference.MODID, "coal_generator"), player, (packetByteBuf -> packetByteBuf.writeBlockPos(pos)));
-        }*/
-
-        if (be != null) ContainerProviderRegistry.INSTANCE.openContainer(Reference.Blocks.COAL_GENERATOR, player, (packetByteBuf -> packetByteBuf.writeBlockPos(pos)));
-
-        return ActionResult.SUCCESS;
+        return openContainer(Reference.Blocks.COAL_GENERATOR, world, pos, player, hand);
     }
 
     @Override

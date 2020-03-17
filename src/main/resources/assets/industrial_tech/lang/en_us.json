@@ -3,6 +3,12 @@
     "industrial_tech.energy_unit": "Φ",
     "industrial_tech.tooltip_energy": "%1$d / %2$d %3$s",
     "industrial_tech.tooltip_progress": "%1$d / %2$d",
+	"industrial_tech.energy_io": "%1$d %2$s/t",
+
+	"industrial_tech.machine_io_disabled": "Disabled",
+	"industrial_tech.machine_io_input": "Input",
+	"industrial_tech.machine_io_output": "Output",
+	"industrial_tech.machine_io_input_output": "Input/Output",
 
     "itemGroup.industrial_tech.materials_group": "Industrial Tech: Materials",
     "itemGroup.industrial_tech.machines_group": "Industrial Tech: Machines",
@@ -29,9 +35,15 @@
 	"item.industrial_tech.advanced_upgrade.tooltip": "Upgrades are components which can be installed in machines that enhance their energy capacity and efficiency.",
 
     "block.industrial_tech.basic_machine_frame": "Iron Machine Frame",
+	"block.industrial_tech.basic_machine_frame.tooltip": "Machine Frames are blocks which provide a secure housing for all the components of a machine to work in.",
     "block.industrial_tech.improved_machine_frame": "Titanium Machine Frame",
+	"block.industrial_tech.improved_machine_frame.tooltip": "Machine Frames are blocks which provide a secure housing for all the components of a machine to work in.",
     "block.industrial_tech.advanced_machine_frame": "Osmium Machine Frame",
+	"block.industrial_tech.advanced_machine_frame.tooltip": "Machine Frames are blocks which provide a secure housing for all the components of a machine to work in.",
 
-    "block.industrial_tech.coal_generator": "Thermoelectric Generator"
+	"block.industrial_tech.capacitor": "Capacitor",
+	"block.industrial_tech.capacitor.tooltip": "Capacitors are devices that store energy in reserve until it needs to be used elsewhere.",
+    "block.industrial_tech.coal_generator": "Thermoelectric Generator",
+	"block.industrial_tech.coal_generator.tooltip": "Thermoelectric generators convert energy from a flammable heat source into flux energy."
 
 }

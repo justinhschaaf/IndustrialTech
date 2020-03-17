@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PBP",
+        "BFB",
+        "PBP"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:osmium_plate"
+        },
+        "B": {
+            "tag": "c:osmium_ingot"
+        },
+        "F": {
+            "tag": "industrial_tech:improved_machine_frames"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:advanced_machine_frame"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PCP",
+        "CFC",
+        "BCB"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:iron_plate"
+        },
+        "C": {
+            "tag": "industrial_tech:basic_energy_crystals"
+        },
+        "F": {
+            "tag": "industrial_tech:basic_machine_frames"
+        },
+        "B": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:capacitor"
+    }
+}

@@ -18,6 +18,10 @@ repositories {
         name = 'CottonMC'
         url = 'http://server.bbkr.space:8081/artifactory/libs-release'
     }
+    maven {
+        name "jitpack"
+        url "https://jitpack.io"
+    }
     mavenLocal()
 }
 
@@ -34,8 +38,10 @@ dependencies {
     // You may need to force-disable transitiveness on them.
 
     // Dependencies
-    modCompile "curse.maven:fabric-flux:${project.fabricflux_version}"
+    modCompile "curse.maven:fabric-flux:${project.fabric_flux_version}"
     modCompile "io.github.cottonmc:LibGui:${project.libgui_version}"
+    modCompile "io.github.cottonmc:cotton-resources:${project.cotton_resources_version}"
+    modCompile "com.github.siphalor:nbt-crafting:${project.nbt_crafting_version}"
 
 }
 

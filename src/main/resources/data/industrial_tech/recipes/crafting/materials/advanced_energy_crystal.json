@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PCP",
+        "EBE",
+        "PCP"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:electrum_plate"
+        },
+        "C": {
+            "tag": "industrial_tech:improved_energy_crystals"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "B": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:advanced_energy_crystal"
+    }
+}

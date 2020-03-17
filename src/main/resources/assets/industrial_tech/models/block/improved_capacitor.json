@@ -1,0 +1,10 @@
+{
+    "parent": "industrial_tech:block/basic_capacitor",
+    "textures": {
+		"texture": "industrial_tech:block/improved_machine_frame",
+		"inner_side": "industrial_tech:block/improved_capacitor_inner_side",
+		"inner_cap": "industrial_tech:block/improved_capacitor_inner_top",
+		"outer": "industrial_tech:block/improved_capacitor_outer",
+		"core": "c:block/copper_block"
+    }
+}

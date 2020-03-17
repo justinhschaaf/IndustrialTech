@@ -9,7 +9,7 @@ import net.minecraft.inventory.Inventory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WSlot<T extends ValidatedSlot> extends WItemSlot {
+public class WSpecialSlot<T extends ValidatedSlot> extends WItemSlot {
 
     protected final List<Slot> peers = new ArrayList<Slot>();
     protected Inventory inventory;
@@ -20,23 +20,23 @@ public class WSlot<T extends ValidatedSlot> extends WItemSlot {
 
     protected Class<T> type;
 
-    public WSlot(Class<T> type, Inventory inventory, int index) {
+    public WSpecialSlot(Class<T> type, Inventory inventory, int index) {
         this(type, inventory, index, 1, 1, false, false);
     }
 
-    public WSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh) {
+    public WSpecialSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh) {
         this(type, inventory, startIndex, slotsWide, slotsHigh, false, false);
     }
 
-    public WSlot(Class<T> type, Inventory inventory, int index, boolean big) {
+    public WSpecialSlot(Class<T> type, Inventory inventory, int index, boolean big) {
         this(type, inventory, index, 1, 1, big, false);
     }
 
-    public WSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh, boolean big) {
+    public WSpecialSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh, boolean big) {
         this(type, inventory, startIndex, slotsWide, slotsHigh, big, false);
     }
 
-    public WSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh, boolean big, boolean ltr) {
+    public WSpecialSlot(Class<T> type, Inventory inventory, int startIndex, int slotsWide, int slotsHigh, boolean big, boolean ltr) {
         super(inventory, startIndex, slotsWide, slotsHigh, big, ltr);
 
         this.inventory = inventory;

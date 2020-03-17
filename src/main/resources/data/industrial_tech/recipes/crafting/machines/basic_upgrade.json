@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "DID",
+        "PFP",
+        "CIC"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:redstone"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "P": {
+            "tag": "industrial_tech:basic_processors"
+        },
+        "F": {
+            "tag": "industrial_tech:basic_machine_frames"
+        },
+        "C": {
+            "tag": "industrial_tech:basic_energy_crystals"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:basic_upgrade"
+    }
+}

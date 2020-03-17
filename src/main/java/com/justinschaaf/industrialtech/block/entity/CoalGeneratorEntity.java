@@ -1,6 +1,6 @@
 package com.justinschaaf.industrialtech.block.entity;
 
-import com.justinschaaf.industrialtech.block.AbstractMachine;
+import com.justinschaaf.industrialtech.util.FluxIOState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
@@ -13,36 +13,31 @@ public class CoalGeneratorEntity extends AbstractMachineEntity {
     private int maxBurnTime;
 
     public CoalGeneratorEntity() {
-
         super(ModBlockEntityRegistry.COAL_GENERATOR, DefaultedList.ofSize(2, ItemStack.EMPTY));
-
-        // Update properties and blockstates
-        updateProperties();
-        updateBlockstates();
-
+        this.setDefaultFluxIO(FluxIOState.OUTPUT);
     }
 
     @Override
     public void tick() {
 
-        if (burnTime > 0) {
+        if (this.burnTime > 0) {
 
             if (getFlux().receiveFlux(8, true) > 0) {
 
                 getFlux().receiveFlux((int) Math.round(8 * getUpgradeMultiplier()));
-                burnTime--;
+                this.burnTime--;
                 markDirty();
 
             }
 
-        } else if (burnTime <= 0) {
+        } else {
 
-            maxBurnTime = 0;
+            this.maxBurnTime = 0;
 
             if (AbstractFurnaceBlockEntity.canUseAsFuel(getInvStack(1))) {
 
-                maxBurnTime = AbstractFurnaceBlockEntity.createFuelTimeMap().get(getInvStack(1).getItem());
-                burnTime = maxBurnTime;
+                this.maxBurnTime = AbstractFurnaceBlockEntity.createFuelTimeMap().get(getInvStack(1).getItem());
+                this.burnTime = this.maxBurnTime;
 
                 takeInvStack(1, 1);
 
@@ -50,20 +45,20 @@ public class CoalGeneratorEntity extends AbstractMachineEntity {
 
         }
 
-        updateProperties();
-        updateBlockstates();
+        this.pushFlux();
+        super.tick();
 
     }
 
     @Override
     public void updateProperties() {
 
-        if (world != null) if (world.isClient) return;
+        if (this.getWorld() != null) if (this.getWorld().isClient()) return;
 
         super.updateProperties();
 
-        this.getPropertyDelegate().set(2, maxBurnTime);
-        this.getPropertyDelegate().set(3, burnTime);
+        this.getPropertyDelegate().set(2, this.maxBurnTime);
+        this.getPropertyDelegate().set(3, this.burnTime);
 
     }
 
@@ -71,10 +66,12 @@ public class CoalGeneratorEntity extends AbstractMachineEntity {
     public void updateBlockstates() {
         super.updateBlockstates();
 
-        if (world != null) {
+        if (this.getWorld() != null) {
 
-            if (burnTime > 0) world.setBlockState(pos, world.getBlockState(pos).with(Properties.ENABLED, true));
-            else world.setBlockState(pos, world.getBlockState(pos).with(Properties.ENABLED, false));
+            if (this.getWorld().isClient()) return;
+
+            if (this.burnTime > 0) this.getWorld().setBlockState(this.getPos(), this.getWorld().getBlockState(this.getPos()).with(Properties.ENABLED, true));
+            else this.getWorld().setBlockState(this.getPos(), this.getWorld().getBlockState(this.getPos()).with(Properties.ENABLED, false));
 
         }
 
@@ -85,8 +82,8 @@ public class CoalGeneratorEntity extends AbstractMachineEntity {
 
         super.toTag(tag);
 
-        tag.putInt("burnTime", burnTime);
-        tag.putInt("maxBurnTime", maxBurnTime);
+        tag.putInt("burnTime", this.burnTime);
+        tag.putInt("maxBurnTime", this.maxBurnTime);
 
         return tag;
 

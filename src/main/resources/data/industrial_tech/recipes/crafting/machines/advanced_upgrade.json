@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "IUI",
+        "PFP",
+        "CUC"
+    ],
+    "key": {
+        "I": {
+            "tag": "c:electrum_ingot"
+        },
+        "U": {
+            "item": "industrial_tech:improved_upgrade"
+        },
+        "P": {
+            "tag": "industrial_tech:advanced_processors"
+        },
+        "F": {
+            "tag": "industrial_tech:advanced_machine_frames"
+        },
+        "C": {
+            "tag": "industrial_tech:advanced_energy_crystals"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:advanced_upgrade"
+    }
+}

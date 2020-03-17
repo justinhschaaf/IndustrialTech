@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PBP",
+        "BGB",
+        "PBP"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:iron_plate"
+        },
+        "B": {
+            "item": "minecraft:iron_bars"
+        },
+        "G": {
+            "tag": "industrial_tech:glass"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:basic_machine_frame"
+    }
+}

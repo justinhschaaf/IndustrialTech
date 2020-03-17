@@ -1,0 +1,94 @@
+{
+    "variants": {
+        "enabled=false,facing=north,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor"
+        },
+        "enabled=false,facing=east,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 90
+        },
+        "enabled=false,facing=south,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 180
+        },
+        "enabled=false,facing=west,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 270
+        },
+        "enabled=false,facing=north,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor"
+        },
+        "enabled=false,facing=east,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 90
+        },
+        "enabled=false,facing=south,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 180
+        },
+        "enabled=false,facing=west,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 270
+        },
+        "enabled=false,facing=north,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor"
+        },
+        "enabled=false,facing=east,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 90
+        },
+        "enabled=false,facing=south,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 180
+        },
+        "enabled=false,facing=west,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 270
+        },
+        "enabled=true,facing=north,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor"
+        },
+        "enabled=true,facing=east,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 90
+        },
+        "enabled=true,facing=south,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 180
+        },
+        "enabled=true,facing=west,upgrade_level=0": {
+            "model": "industrial_tech:block/basic_capacitor",
+            "y": 270
+        },
+        "enabled=true,facing=north,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor"
+        },
+        "enabled=true,facing=east,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 90
+        },
+        "enabled=true,facing=south,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 180
+        },
+        "enabled=true,facing=west,upgrade_level=1": {
+            "model": "industrial_tech:block/improved_capacitor",
+            "y": 270
+        },
+        "enabled=true,facing=north,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor"
+        },
+        "enabled=true,facing=east,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 90
+        },
+        "enabled=true,facing=south,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 180
+        },
+        "enabled=true,facing=west,upgrade_level=2": {
+            "model": "industrial_tech:block/advanced_capacitor",
+            "y": 270
+        }
+    }
+}

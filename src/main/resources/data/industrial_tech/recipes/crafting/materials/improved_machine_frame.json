@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PBP",
+        "BFB",
+        "PBP"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:titanium_plate"
+        },
+        "B": {
+            "tag": "c:titanium_ingot"
+        },
+        "F": {
+            "tag": "industrial_tech:basic_machine_frames"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:improved_machine_frame"
+    }
+}

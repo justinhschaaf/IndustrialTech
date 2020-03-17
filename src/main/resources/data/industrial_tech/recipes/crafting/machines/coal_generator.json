@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PPP",
+        "CFC",
+        "BGB"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:iron_plate"
+        },
+        "C": {
+            "tag": "industrial_tech:basic_energy_crystals"
+        },
+        "F": {
+            "tag": "industrial_tech:basic_machine_frames"
+        },
+        "B": {
+            "item": "minecraft:blast_furnace"
+        },
+        "G": {
+            "tag": "c:iron_gear"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:coal_generator"
+    }
+}

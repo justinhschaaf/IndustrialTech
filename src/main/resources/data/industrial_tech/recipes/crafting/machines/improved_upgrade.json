@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "IUI",
+        "PFP",
+        "CUC"
+    ],
+    "key": {
+        "I": {
+            "tag": "c:copper_ingot"
+        },
+        "U": {
+            "item": "industrial_tech:basic_upgrade"
+        },
+        "P": {
+            "tag": "industrial_tech:improved_processors"
+        },
+        "F": {
+            "tag": "industrial_tech:improved_machine_frames"
+        },
+        "C": {
+            "tag": "industrial_tech:improved_energy_crystals"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:improved_upgrade"
+    }
+}

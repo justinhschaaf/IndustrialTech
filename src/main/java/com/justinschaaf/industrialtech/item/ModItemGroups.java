@@ -1,6 +1,6 @@
 package com.justinschaaf.industrialtech.item;
 
-import com.justinschaaf.industrialtech.main.Reference;
+import com.justinschaaf.industrialtech.util.Reference;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

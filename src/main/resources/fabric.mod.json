@@ -33,7 +33,9 @@
 		"fabric": "*",
 		"minecraft": "1.15.x",
 		"fabricflux": ">=1.2.0",
-		"libgui": ">=1.5.1"
+		"libgui": ">=1.6.0",
+		"cotton-resources": ">=1.5.1",
+		"nbtcrafting": ">=1.9.9"
 	},
 	"suggests": {}
 	

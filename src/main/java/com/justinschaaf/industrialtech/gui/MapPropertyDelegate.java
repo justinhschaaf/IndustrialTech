@@ -3,10 +3,11 @@ package com.justinschaaf.industrialtech.gui;
 import net.minecraft.container.PropertyDelegate;
 
 import java.util.HashMap;
+import java.util.Map;
 
-public class PropertyDelegateImpl implements PropertyDelegate {
+public class MapPropertyDelegate implements PropertyDelegate {
 
-    HashMap<Integer, Integer> properties = new HashMap<>();
+    private Map<Integer, Integer> properties = new HashMap<>();
 
     @Override
     public int get(int key) {

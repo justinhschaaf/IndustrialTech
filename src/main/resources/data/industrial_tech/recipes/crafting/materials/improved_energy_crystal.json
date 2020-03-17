@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "PCP",
+        "DBD",
+        "PCP"
+    ],
+    "key": {
+        "P": {
+            "tag": "c:copper_plate"
+        },
+        "C": {
+            "tag": "industrial_tech:basic_energy_crystals"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "B": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "industrial_tech:improved_energy_crystal"
+    }
+}
